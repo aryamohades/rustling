@@ -36,6 +36,17 @@ fn main() {
     let s = String::from("hello");
     let (s2, len) = calc_len(s);
     println!("s2:len {s2}:{len}");
+
+    // Following example uses a fixed size array, which is stack allocated.
+    // So when assigning b to a, a is actually copied, not moved. Therefore,
+    // it's safe to continue using both a and b. If a had an unknown size at
+    // compile-time (e.g. if a was a vector), it would need to be allocated
+    // on the heap and a would be a pointer to where the value lives in the heap.
+    // In this case, assigning b to a would cause a to be moved and become invalid.
+    let a = [1, 2];
+    let b = a;
+    println!("{:?}", a);
+    println!("{:?}", b);
 }
 
 fn takes_ownership(s: String) {
