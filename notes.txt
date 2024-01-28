@@ -1,0 +1,22 @@
+Rust concepts:
+- ownership
+- references
+- borrow vs move
+- String
+- Vector
+- slices
+- enums
+- structs
+- match
+- Clone
+- Copy
+- Option
+- Result
+- module system
+    - packages, crates, modules, paths
+- Box
+- Rc
+- Cow
+- generics
+- traits
+- lifetimes
