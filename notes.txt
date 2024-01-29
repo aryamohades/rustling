@@ -4,6 +4,7 @@ Rust concepts:
 - borrow vs move
 - String
 - Vector
+- HashMap
 - slices
 - enums
 - structs
@@ -17,6 +18,7 @@ Rust concepts:
 - Box
 - Rc
 - Cow
+- Arc
 - generics
 - traits
 - lifetimes
